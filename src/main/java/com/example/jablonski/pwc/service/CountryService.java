@@ -93,7 +93,7 @@ public class CountryService {
                 CountryNode currentEnd = endQueue.remove();
                 for (CountryNode border : currentEnd.getBorders()) {
                     if (visitedFromStart.contains(border.getCode())) {
-                        border.setParentFromStart(currentEnd);
+                        border.setParentFromEnd(currentEnd);
                         return Optional.of(border);
                     }
                     if (!visitedFromEnd.contains(border.getCode())) {
