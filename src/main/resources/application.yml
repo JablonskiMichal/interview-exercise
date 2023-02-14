@@ -1,0 +1,9 @@
+info:
+  build:
+    version: @project.version@
+    projectName: @project.name@
+    description: @project.description@
+
+server:
+  servlet:
+    context-path: /
